@@ -15,12 +15,11 @@ struct info
 
 };
 
-int main()
-{
-  int sum=5;
-  int i,j;
-  struct info temp;
-  for ( i=0; i< sum-1; i++)
+int sort (int sum,int i)
+{   int j;
+    sum=5;
+    struct info temp;
+    for ( i=0; i< sum-1; i++)
     {
       for( j=0; j<sum-1-i; j++)
 	{
@@ -32,9 +31,16 @@ int main()
 	    }
 	}
     }
-  printf("sum is %d    ID    name          salary \n",sum);
+    return sum;
+}
+
+int main()
+{
+  int sort (int sum,int i);
+  int i,sum;
+  printf("sum is %d    ID         name              salary \n",sort(sum,i));
   for( i=0; i<5; i++)
     {
-      printf("             %d      %s          %f \n",emp[i].ID,emp[i].name,emp[i].salary);
+      printf("             %d         %s             %f \n",emp[i].ID,emp[i].name,emp[i].salary);
     }
 }
