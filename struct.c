@@ -38,6 +38,7 @@ int main()
 {
   int sort (int sum,int i);
   int i,sum;
+  i=0,sum=0;
   printf("sum is %d    ID         name              salary \n",sort(sum,i));
   for( i=0; i<5; i++)
     {
