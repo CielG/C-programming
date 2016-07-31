@@ -42,6 +42,6 @@ int main()
   printf("sum is %d    ID         name              salary \n",sort(sum,i));
   for( i=0; i<5; i++)
     {
-      printf("             %d         %s             %f \n",emp[i].ID,emp[i].name,emp[i].salary);
+      printf("%14d%15s%24f\n",emp[i].ID,emp[i].name,emp[i].salary);
     }
 }
