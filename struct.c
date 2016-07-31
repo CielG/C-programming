@@ -6,16 +6,9 @@ struct info
   int ID;
   char name[10];
   float salary;
-}emp[5]={
-    {01,"Dean",12337},
-    {02,"Caroline",11100},
-    {03,"Klaus",28659},
-    {04,"Charlotte",23897},
-    {05,"Carson",46086},
-
 };
 
-int sort (int sum,int i)
+int sort (int sum,int i,struct info *emp)
 {   int j;
     sum=5;
     struct info temp;
@@ -36,10 +29,19 @@ int sort (int sum,int i)
 
 int main()
 {
-  int sort (int sum,int i);
+  int sort (int sum,int i,struct info *emp);
   int i,sum;
   i=0,sum=0;
-  printf("sum is %d    ID         name              salary \n",sort(sum,i));
+  
+  struct info emp[5]={
+    {01,"Dean",12337},
+    {02,"Caroline",11100},
+    {03,"Klaus",28659},
+    {04,"Charlotte",23897},
+    {05,"Carson",46086},
+};
+  
+  printf("sum is %d    ID         name              salary \n",sort(sum,i,emp));
   for( i=0; i<5; i++)
     {
       printf("%14d%15s%24f\n",emp[i].ID,emp[i].name,emp[i].salary);
