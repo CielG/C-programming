@@ -4,18 +4,18 @@ void Insertion_sort(int A[],int n);
 void main()
 {
   int i,n;
-   int a[20];
+  int a[20];
 
   printf("Enter the size of your array\n");
   scanf("%d",&n);
-
   printf("Enter your array \n");
+	
   for(i=0;i<n;i++)
     {
       scanf("%d",&a[i]);
     }
+	
   Insertion_sort(a,n);
-
   for(i=0;i<n;i++)
     {
       printf("%d\n",a[i]);
