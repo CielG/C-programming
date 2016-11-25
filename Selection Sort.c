@@ -1,7 +1,7 @@
 #include<stdio.h>
 void Selection_sort(int A[],int n);
 
-void main()
+int main()
 {   int i,n;
     int a[20];
 
@@ -19,6 +19,7 @@ void main()
     {
       printf("%d\n",a[i]);
     }
+    return 0;
 
 }
 
