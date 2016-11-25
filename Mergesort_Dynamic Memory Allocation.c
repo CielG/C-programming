@@ -49,7 +49,7 @@ void mergesort(int a[],int T[],int start,int end)
     }
 }
 
-void main()
+int main()
 {
     int n,i,j;
 
@@ -72,4 +72,5 @@ void main()
     }
     free(a);
     free(t);
+    return 0;
 }
