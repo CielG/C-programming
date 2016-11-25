@@ -34,7 +34,7 @@ void quicksort(int A[],int l, int r)
     }
 }
 
-void main()
+int main()
 {
     int n,i,j,a[100];
 
@@ -61,6 +61,6 @@ void main()
     for (i=0; i<n; i++)
     {
         printf("%d\n",a[i]);
-
     }
+    return 0;
 }
