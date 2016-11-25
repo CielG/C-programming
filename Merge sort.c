@@ -38,9 +38,9 @@ void mergesort(int a[],int T[],int start,int end)
     }
 }
 
-void main()
+int main()
 {
-    int n,i,j,a[100],t[100];
+    int n,i,a[100],t[100];
 
     printf("Enter the size of your array \n");
     scanf("%d",&n);
@@ -57,4 +57,5 @@ void main()
         printf("%d\n",a[i]);
 
     }
+    return 0;
 }
