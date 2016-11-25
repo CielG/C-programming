@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include<time.h>
 
-void main()
+int main()
 {
     srand((unsigned)time(NULL));
     int i,a[20];
@@ -24,6 +24,7 @@ void main()
     {
         printf("%d\n",a[i]);
     }
+    return 0;
 }
 void Selection_sort(int A[],int n)
 {
