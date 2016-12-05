@@ -24,7 +24,7 @@ void heapsort(int a[],int n)
 	}
 
     root=i;
-    j=i*2;
+    j=i*2+1;
 
       while(j<n)
 	{
@@ -42,8 +42,8 @@ void heapsort(int a[],int n)
 	    {
 	      break;
 	    }
-	  a[root]=max;
 	}
+	  a[root]=max;
     }
 }
   int main()
