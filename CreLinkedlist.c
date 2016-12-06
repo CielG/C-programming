@@ -55,3 +55,4 @@ void Free(struct Node*head)
     }
     head=NULL;//mark as empty list
 }
+
